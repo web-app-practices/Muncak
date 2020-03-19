@@ -42,13 +42,18 @@ body {
   width: 70%;
   height: auto;
 }
+.wrapper::before{
+  content : url('img/header--left.png');
+  top: 230px;
+  left: 0px;
+  position: absolute;
+  display: block;
+  z-index: -10;
+}
 .wrapper::after{
-  content : url('img/float-right-image.png');
-  width: 30%!important;
-  color: black;
-
+  content : url('img/header--right.png');
   top: 0px;
-  right: 332px!important;
+  right: 0px;
   position: absolute;
   display: block;
   z-index: -10;
