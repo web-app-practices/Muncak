@@ -175,6 +175,7 @@ h1.head-name{
 .support-container {
   border: 0px solid blue;
   padding-top: 230px;
+  padding-bottom: 40px;
 }
 .support-item-flex {
   display: flex;
@@ -188,7 +189,6 @@ h1.head-name{
 /**/
 .news-feed-container {
   padding: 50px;
-  margin-bottom: 40%;
 }
 .news-feed-flex {
   display: flex;
@@ -218,6 +218,7 @@ h1.head-name{
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 20px;
+  color: #546e7a;
 }
 .read-more {
   color: #2870db!important;
