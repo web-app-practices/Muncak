@@ -93,6 +93,8 @@ h1.head-name{
 .intro-container {
   padding: 50px;
   margin-bottom: 40%;
+  display: flex;
+  justify-content: flex-start;
 }
 .intro-title {
   font-size: 28px;
@@ -291,6 +293,7 @@ input[type=submit], select {
   top:-240px;
   z-index: -10!important;
 }
+
 .footer-box h3 {
   padding-bottom: 30px;
   font-weight: lighter;
@@ -300,4 +303,17 @@ input[type=submit], select {
 }
 .footer-box .list-item {
   line-height: 1.8;
+}
+
+/**/
+@media screen and (max-width: 1295px) {
+  .wrapper::after{
+    display: none;
+  }
+  .head-navigation a {
+    color: blue;
+  }
+  .intro {
+    width: 100%;
+  }
 }
