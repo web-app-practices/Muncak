@@ -1,7 +1,6 @@
 /* = = = = = = = = = = = = = = = =
 Muncak Landing Page
-PSD Layout
-Practicing making a Landing Page from PSD
+This website is used for practice [PSD Template]
 Start Coding : 15-03-2020
 = = = = = = = = = = = = = = = = */
 
@@ -56,7 +55,7 @@ h1.head-name::first-letter{
   color: #2870db;
 }
 h1.head-name{
-  font-size: 40px;
+  font-size: 35px;
   color: #1c2056;
 }
 .head-navigation{
@@ -99,7 +98,7 @@ h1.head-name{
   z-index: -10;
 }
 .intro-title {
-  font-size: 35px;
+  font-size: 45px;
   color: #1c2056;
 }
 .intro-container-paragraph {
@@ -119,18 +118,15 @@ h1.head-name{
   box-shadow: 0px 10px 21px 0px rgba(187,208,232,1);
 }
 /**/
-.support-container {
-  padding-top: 100px;
-}
 .section-title {
-  font-size: 28px;
+  font-size: 35px;
   text-align: center;
   padding-bottom: 40px;
 }
 .commentbox {
   background-color: #ffffff;
-  padding: 50px;
-  width: 35%;
+  padding: 40px;
+  width: 40%;
   border-radius: 20px!important;
   -webkit-box-shadow: 2px 7px 17px 3px rgba(231,238,245,1);
   -moz-box-shadow: 2px 7px 17px 3px rgba(231,238,245,1);
@@ -164,19 +160,6 @@ h1.head-name{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-}
-.outer-commentbox:nth-child(1)::before{
-  content : url('img/advocate.png');
-  border: 0px solid pink;
-}
-.outer-commentbox:nth-child(2)::before{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  content : url('img/volunteer.png');
-}
-.outer-commentbox:nth-child(3)::before{
-  content : url('img/explore.png');
 }
 /**/
 .support-container {
@@ -310,11 +293,62 @@ input[type=submit], select {
 
 /**/
 @media screen and (min-width: 300px) and (max-width: 1350px) {
+    /* intro */
     img.before-intro{
-      width: 20%;
+      display: none;
     }
-
     img.after-intro{
     width: 50%;
-  }
+    }
+    .wrapper {
+      width: 100%;
+    }
+    /*facility*/
+    .commentbox-overview-flex {
+      display: flex;
+      flex-direction: column;
+    }
+    img.after-facility{
+      display: none;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 850px) {
+    /* head */
+    .head-navigation {
+      display: none;
+    }
+    .hamburger-menu {
+      display: inline-block;
+      cursor: pointer;
+      margin-top:-70px;
+      float: right;
+    }
+
+    .hamburger-menu div {
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+  /*facility*/
+    .commentbox {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    /* intro */
+    .intro-container{
+      border: 0px solid red;
+      display: flex;
+      flex-direction: row;
+      padding: 30px;
+      margin-top: 140px;
+    }
+    .intro {
+      width: 100%;
+    }
 }
