@@ -55,14 +55,19 @@ h1.head-name{
 .head-navigation a{
   padding: 5px 25px;
   border-radius: 20px;
-  color: white;
+  color: #d1d1d1;
+}
+.head-navigation a:hover{
+  color: #ffa632;
 }
 .login-btn {
   color: #14215e!important;
   background-color: white;
   border-radius: 10px!important;
 }
-
+.login-btn:hover {
+  background: #ffd632!important;
+}
 /**/
 .intro-container {
   padding: 50px;
@@ -312,22 +317,19 @@ input[type=submit], select {
 
 /**/
 @media screen and (min-width: 300px) and (max-width: 1468px) {
-    /* intro */
+    .wrapper {
+      width: 100%;
+    }
     img.before-intro{
       display: none;
     }
     img.after-intro{
     width: 50%;
     }
-    .wrapper {
-      width: 100%;
-    }
-    /*facility*/
-    .commentbox-overview-flex {
-      display: flex;
-      flex-direction: column;
-    }
     img.after-facility{
+      display: none;
+    }
+    img.before-newsfeed {
       display: none;
     }
 }
@@ -338,7 +340,7 @@ input[type=submit], select {
       #menuToggle {
         display: block;
         position: relative;
-        margin-top:-220px;
+        margin-top:-225px;
         float: right;
 
         z-index: 1;
@@ -350,15 +352,14 @@ input[type=submit], select {
         #menuToggle a
         {
         text-decoration: none;
-        color: #fff;
+        color: #ffe932;
         display: flex;
-
         transition: color 0.3s ease;
         }
 
         #menuToggle a:hover
         {
-        color: #ffe932;
+        color: #fff;
         }
 
 
@@ -390,7 +391,7 @@ input[type=submit], select {
         margin-bottom: 5px;
         position: relative;
 
-        background: #cdcdcd;
+        background: #77a6e3;
         border-radius: 3px;
 
         z-index: 1;
@@ -574,7 +575,7 @@ input[type=submit], select {
       }
       .listbox {
         width: 153px;
-        border: 1px solid red;
+        border: 0px solid red;
         padding: 10px;
       }
       .after-footer{
@@ -675,7 +676,7 @@ input[type=submit], select {
   }
   .listbox {
     width: 200px;
-    border: 1px solid green;
+    border: 0px solid green;
     padding: 10px;
   }
   .after-footer{
@@ -817,7 +818,7 @@ input[type=submit], select {
   }
   .listbox {
     width: 200px;
-    border: 1px solid purple;
+    border: 0px solid purple;
     padding: 10px;
   }
   .after-footer{
