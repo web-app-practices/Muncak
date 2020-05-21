@@ -275,12 +275,13 @@ input[type=submit], select {
   margin: 0 auto;
   border: 0px solid white;
   margin-top:-50px;
+  padding-bottom: 20px;
 }
 .flex-footer {
   padding-top: 50px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  margin-left: 5%;
   font-size: 13px;
   font-weight: lighter;
   color: white;
@@ -293,11 +294,12 @@ input[type=submit], select {
 .after-footer{
   position: absolute;
   content : url('img/footer-image.png');
-  width: 1800px;
-  left: -100px;
-  height: 600px;
-  margin-top:-100px;
   z-index: -10!important;
+  left: 0!important;
+  right: 0!important;
+  width: 100%;
+  height: 85%;
+  margin-top:-200px;
 }
 .footer-box h3 {
   padding-bottom: 30px;
@@ -310,11 +312,17 @@ input[type=submit], select {
   line-height: 1.8;
 }
 .social-icons {
-  margin-top:10px;
+  padding-top:10px;
   display: flex;
   justify-content: center;
 }
-
+.fa-instagram,
+.fa-facebook-f,
+.fa-twitter{
+  color: white;
+  font-size: 30px;
+  margin: 0 20px;
+}
 /**/
 @media screen and (min-width: 300px) and (max-width: 1468px) {
     .wrapper {
@@ -331,6 +339,13 @@ input[type=submit], select {
     }
     img.before-newsfeed {
       display: none;
+    }
+    .fa-instagram,
+    .fa-facebook-f,
+    .fa-twitter{
+      color: #205ead;
+      font-size: 30px;
+      margin: 0 20px;
     }
 }
 
@@ -528,6 +543,14 @@ input[type=submit], select {
         margin-bottom: 40px;
       }
       /**/
+      .subscribe-inner-box {
+        padding: 20px!important;
+        object-fit: cover;
+        width: 100%;
+        margin: 0 auto!important;
+        height: 380px;
+        border-radius: 10px!important;
+      }
       .subscribe-form h2 {
         color: #fff;
         font-size: 20px;
@@ -540,7 +563,7 @@ input[type=submit], select {
       input[type=text], select {
         width: 100%;
         padding: 12px 20px;
-        margin: 10px auto!important;
+        margin: 5px auto!important;
         display: inline-block;
         border: 1px solid #ccc;
         border-radius: 4px!important;
@@ -550,7 +573,7 @@ input[type=submit], select {
         width: auto;
         padding: 12px 40px;
         color: #fff;
-        margin: 0 auto!important;
+        margin: 50px auto!important;
         display: inline-block;
         background-color: #00aeff;
         border-radius: 20px!important;
@@ -571,36 +594,26 @@ input[type=submit], select {
         flex-wrap: wrap;
         font-size: 13px;
         font-weight: lighter;
-        color: white;
       }
       .listbox {
         width: 153px;
         border: 0px solid red;
         padding: 10px;
+        color: #205ead;
       }
       .after-footer{
-        position: absolute;
-        content : url('img/footer-image.png');
-        width: auto;
-        left: -700px;
-        height: 1000px;
-        z-index: -10!important;
+        display: none;
       }
       .footer-box h3 {
         padding-bottom: 10px;
         margin-top:30px;
-        font-weight: lighter;
+        font-weight: bold;
         font-size: 18px;
-        color: white;
+        color: #205ead;
         letter-spacing: normal;
       }
       .footer-box .list-item {
         line-height: 1.8;
-      }
-      .social-icons {
-        margin-top:10px;
-        display: flex;
-        justify-content: center;
       }
 }
 
@@ -632,7 +645,7 @@ input[type=submit], select {
   /**/
   .subscribe-form h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 23px;
     font-weight: normal;
   }
   .textboxes {
@@ -640,9 +653,9 @@ input[type=submit], select {
     flex-direction: column
   }
   input[type=text], select {
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
-    margin: 10px auto!important;
+    margin: 5px auto!important;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px!important;
@@ -652,7 +665,7 @@ input[type=submit], select {
     width: auto;
     padding: 12px 40px;
     color: #fff;
-    margin: 0 auto!important;
+    margin: 30px auto!important;
     display: inline-block;
     background-color: #00aeff;
     border-radius: 20px!important;
@@ -672,37 +685,27 @@ input[type=submit], select {
     flex-wrap: wrap;
     font-size: 13px;
     font-weight: lighter;
-    color: white;
   }
   .listbox {
     width: 200px;
     border: 0px solid green;
     padding: 10px;
+    color: #205ead;
   }
   .after-footer{
-    position: absolute;
-    content : url('img/footer-image.png');
-    width: auto;
-    left: -600px;
-    height: 1000px;
-    z-index: -10!important;
+    display: none;
   }
 
   .footer-box h3 {
     padding-bottom: 10px;
     margin-top:30px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 18px;
-    color: white;
+    color: #205ead;
     letter-spacing: normal;
   }
   .footer-box .list-item {
     line-height: 1.8;
-  }
-  .social-icons {
-    margin-top:10px;
-    display: flex;
-    justify-content: center;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1200px) {
@@ -724,7 +727,7 @@ input[type=submit], select {
   /**/
   .subscribe-form h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: normal;
   }
   .textboxes {
@@ -732,9 +735,9 @@ input[type=submit], select {
     flex-direction: column
   }
   input[type=text], select {
-    width: 100%;
+    width: 90%;
     padding: 12px 20px;
-    margin: 10px auto!important;
+    margin: 5px auto!important;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px!important;
@@ -744,7 +747,7 @@ input[type=submit], select {
     width: auto;
     padding: 12px 40px;
     color: #fff;
-    margin: 0 auto!important;
+    margin: 50px auto!important;
     display: inline-block;
     background-color: #00aeff;
     border-radius: 20px!important;
@@ -765,41 +768,29 @@ input[type=submit], select {
     flex-wrap: wrap;
     font-size: 13px;
     font-weight: lighter;
-    color: white;
   }
   .listbox {
     width: 200px;
     border: 0px solid green;
     padding: 10px;
+    color: #205ead;
   }
   .after-footer{
-    position: absolute;
-    content : url('img/footer-image.png');
-    width: auto;
-    left: -400px;
-    height: 1000px;
-    z-index: -10!important;
+    display: none;
   }
   .footer-box h3 {
     padding-bottom: 10px;
     margin-top:30px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 18px;
-    color: white;
+    color: #205ead;
     letter-spacing: normal;
   }
   .footer-box .list-item {
     line-height: 1.8;
   }
-  .social-icons {
-    margin-top:10px;
-    display: flex;
-    justify-content: center;
-  }
-
 }
 @media screen and (min-width: 1210px) and (max-width: 1500px) {
-
   /**/
   .footer-box {
     width: 140%;
@@ -810,8 +801,7 @@ input[type=submit], select {
   .flex-footer {
     padding-top: 50px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-left: 7%;
     font-size: 13px;
     font-weight: lighter;
     color: white;
@@ -821,14 +811,8 @@ input[type=submit], select {
     border: 0px solid purple;
     padding: 10px;
   }
-  .after-footer{
-    position: absolute;
-    content : url('img/footer-image.png');
-    width: auto;
-    left: -300px;
-    height: 1000px;
-    margin-bottom:-400px!important;
-    z-index: -10!important;
+  .inner-wrapper { /* fix border padding in this media-query*/
+    padding: 0px;
   }
   .footer-box h3 {
     padding-bottom: 10px;
@@ -841,9 +825,11 @@ input[type=submit], select {
   .footer-box .list-item {
     line-height: 1.8;
   }
-  .social-icons {
-    margin-top:10px;
-    display: flex;
-    justify-content: center;
+  .fa-instagram,
+  .fa-facebook-f,
+  .fa-twitter{
+    color: white;
+    font-size: 30px;
+    margin: 0 20px;
   }
 }
