@@ -350,7 +350,6 @@ input[type=submit], select {
 }
 
 @media screen and (min-width: 320px) and (max-width: 680px) {
-
       /* hamburger 14-5-2020 */
       #menuToggle {
         display: block;
