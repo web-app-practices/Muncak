@@ -26,7 +26,7 @@ body {
   background-color: #fbfcfc;
   display: flex;
   justify-content: center;
-  overflow-x: hidden!important;
+  overflow-x: hidden;
 }
 .wrapper {
   width: 80%;
@@ -325,9 +325,6 @@ input[type=submit], select {
 }
 /**/
 @media screen and (min-width: 300px) and (max-width: 1468px) {
-    .wrapper {
-      width: 100%;
-    }
     img.before-intro{
       display: none;
     }
@@ -493,7 +490,11 @@ input[type=submit], select {
         {
         transform: none;
         }
-
+        .inner-wrapper {
+          border: 0px solid pink;
+          width: 120%;
+          margin-left: -10%;
+        }
         /* head */
         .head-navigation {
           display: none;
@@ -505,7 +506,7 @@ input[type=submit], select {
           flex-direction: column;
           flex-wrap: wrap;
           padding: 30px;
-          margin-top: 160px;
+          margin-top: 165px;
           z-index: -1;
         }
         .intro {
@@ -620,13 +621,19 @@ input[type=submit], select {
   #menuToggle {
     display: none;
   }
+  .inner-wrapper {
+    width: 120%;
+    margin-left: -10%;
+  }
   /* intro */
   .intro-container{
-    border: 0px solid blue;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 30px;
-    margin-top: 160px;
+    margin-top: 165px;
+    margin-left: -50px;
     z-index: -1;
   }
   .intro {
@@ -635,7 +642,8 @@ input[type=submit], select {
   /* news feed */
   .news-feed-flex{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .newsbox {
     width: 100%;
@@ -713,15 +721,30 @@ input[type=submit], select {
   }
   /* intro */
   .intro-container{
-    border: 0px solid green;
+    border: 0px solid red;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 30px;
     margin-top: 100px;
+    margin-left: -80px;
     z-index: -1;
   }
   .intro {
     width: 50%;
+  }
+  /* news feed */
+  .news-feed-container {
+    border: 0px solid gold;
+  }
+  .news-feed-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .newsbox {
+    border: 0px solid pink;
+    width: 40%;
   }
   /**/
   .subscribe-form h2 {
@@ -746,7 +769,7 @@ input[type=submit], select {
     width: auto;
     padding: 12px 40px;
     color: #fff;
-    margin: 50px auto!important;
+    margin: 30px auto!important;
     display: inline-block;
     background-color: #00aeff;
     border-radius: 20px!important;
@@ -790,7 +813,10 @@ input[type=submit], select {
   }
 }
 @media screen and (min-width: 1210px) and (max-width: 1500px) {
-  /**/
+
+  .wrapper {
+    padding-top: 50px;
+  }
   .footer-box {
     width: 140%;
     margin: 0 auto;
